@@ -17,3 +17,10 @@ function max(a, b) {
 
 console.log(max(10, 15));
 
+
+//Returns true if width > height
+function isLandscape(width, height) {
+    return (width > height);
+}
+
+console.log(isLandscape(10, 20));
