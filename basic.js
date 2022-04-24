@@ -42,4 +42,22 @@ function fizzBuzz(input) {
 fizzBuzz(true);
 
 
+//Speed limit <= 70, return ok
+//Every 5km above speed limit, driver gets 1 point
+//12 points -> license suspended
+//Way to improve: Use const, define speed limits as const blc easier to change if limit changes
+function checkSpeed(speed) {
+    if (speed < 75) return console.log('ok');
+    if (speed >= 130) return console.log('license suspended');
+    else {
+        let speeds = speed - 70;
+        let points = speeds / 5;
+        points = Math.floor(points);
+        console.log('Points: ' + points);
+    }
+}
+
+checkSpeed(65);
+
+
 
