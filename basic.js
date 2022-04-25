@@ -60,4 +60,31 @@ function checkSpeed(speed) {
 checkSpeed(65);
 
 
+//Show the number and whether it's even/odd from 0 to limit
+function showNumbers(limit) {
+    for (let i = 0; i <= limit; i++) {
+        if (i % 2 === 0) console.log(i + ' even');
+        else console.log(i + ' odd');
+    }
+}
+
+showNumbers(10);
+
+
+//Count # of truthy elements in an array, undefined null '' false 0 NaN are falsy 
+function countTruthy(array) {
+    let i = 0;
+
+    for (let truthy of array) {
+        //if statement will run if element of array results to true/truthy
+        if (truthy) i++;
+    }
+
+    console.log(i);
+}
+
+const array = ['1', '2', 3, null, undefined];
+
+countTruthy(array);
+
 
